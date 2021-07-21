@@ -1,0 +1,69 @@
+<html>
+    <head>
+
+        <link href="regstyle.css" rel="stylesheet"></link>
+        
+        <script type="text/javascript">
+            function Validation()
+            {
+            var emailID = document.myForm.EMail.value;
+            var num=document.myForm.number.value;
+            atpos = emailID.indexOf("@");
+            dotpos = emailID.lastIndexOf(".");
+            if (atpos< 1 || ( dotpos - atpos< 2 ))
+            {
+                alert("Please enter correct email ID")
+                document.myForm.EMail.focus() ;
+                return false;
+            }else if (isNaN(num)){
+                document.getElementById("ph");
+                alert("Please enter numeric only.")
+                return false;
+            }else{
+            
+                return true;
+            }
+            
+            }
+            </script>
+    </head>
+        <body>
+            
+            <div class="borderimg">
+                
+            <form  name="myForm" action="contact" method="POST" onsubmit="return Validation()">
+            
+                <div class="center"><br><br><br>
+                 <div id="mydiv">  <br><br>
+                    <div class="head">Contact Us!</div><br>
+                 </div>
+                    <br><br><br><br><br>
+                <label class="label" for="Name" >Name:</label>
+                <input type="text" id="Name"    value=""
+                name="First Name" placeholder="Your First Name..." style="text-align: center;" required> <b style="color: red">*</b><br>
+<br><br>
+                
+                <label class="label" for="uname">Email id:</label>
+                <input type="text" id="EMail" value=""
+                name="Email id" placeholder="Email id..." required><b style="color: red">*</b><br>
+<br><br>
+
+<label class="label" for="Number">phone number:</label>
+                <input type="text" id="number" value=""
+                name="number" placeholder="Your Phone Number..." style="text-align: center;" required><b style="color: red">*</b><br>
+<br><br>
+
+<label class="label" for="pwd">Ask Question?</label>
+                <input type="text" id="txt" value=""
+                name="text" placeholder="Question?" required><b style="color: red">*</b><br>
+<br><br><br>
+               
+                <a href="usersucess.html" class="button">Submit</a>
+                
+                
+                </div>
+            </div>
+            </form>
+        </body>
+ 
+ 

@@ -1,0 +1,64 @@
+<style>
+body{
+background-image: url("https://previews.123rf.com/images/oksix/oksix1909/oksix190901323/130629781-superfoods-as-a-food-border-for-design.jpg");
+
+background-size:101% 95%;
+}
+#mydiv{
+        width: 100%;
+        height:60px;
+        background:red;
+        animation:move 5s infinite;
+
+    }
+    @keyframes move {
+        from{
+            background-color:red;}
+            to{background-color:blue;}
+        
+    }
+.head{
+    font-size: 55;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.button{
+    color:black;
+    border: 2px insert black;
+    padding: 4;
+    text-align: center;
+    display: ruby;
+    font-size: 20;
+    margin: 15px 10px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color:green;
+    color: blanchedalmond;
+}
+
+
+.borderimg{
+    border: 10px solid transparent;
+    padding: 15px;
+    background: cover;
+}
+
+.center{
+    width: 100%;
+    padding: 5;
+    line-height: 10px;
+    height: 100%;
+    border: 10px solid green;
+    text-align: center;
+}
+.label{
+
+    color: ;
+    background-color ;
+    font-style: italic;
+    font-size: 20;
+    padding: 15;
+    text-align: center;
+</style> 
